@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+  get 'static_pages/home'
+ # get 'static_pages/about'
+ # get 'static_pages/mesploit'
+  get 'static_pages/help'
+  get 'static_pages/about'
+  get 'static_pages/mesploit'
+#  SampleApp::Application.routes.draw.do
+#        get 'static_pages/home'
+#        get 'static_pages/about'
+#        get 'static_pages/mesploit'
+#        get 'static_pages/help'
+ # end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,3 +69,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+#SampleApp::Application.routes.draw.do
+#	get "static_pages/home"
+#  	get "static_pages/about"
+#  	get "static_pages/mesploit"
+#  	get "static_pages/help"
+#end

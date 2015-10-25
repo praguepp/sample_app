@@ -20,6 +20,7 @@ RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+#  config.include Capybara::DSL	
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
@@ -39,7 +40,6 @@ RSpec.configure do |config|
     # `true` in RSpec 4.
     mocks.verify_partial_doubles = true
   end
-
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
@@ -89,4 +89,9 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+#config.fixture_path = "#{::Rails.root}/spec/fixtures"
+# config.use_transactional_fixtures = true
+# config.infer_base_class_for_anonymous_controllers = false
+# config.order = "random" 
+#config.include Capybara::DSL
 end
